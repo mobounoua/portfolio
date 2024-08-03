@@ -38,6 +38,10 @@ header{
                 padding: 5px;
                 font-size: 10px;
             }
+            @media screen and (max-width: 480px) {
+                padding: 5px;
+                font-size: 8px;
+            }
         }
         a:hover{
             border-color : $tertiary-color;

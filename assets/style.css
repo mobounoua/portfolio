@@ -49,6 +49,12 @@ header nav a {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 480px) {
+  header nav a {
+    padding: 5px;
+    font-size: 8px;
+  }
+}
 header nav a:hover {
   border-color: #fa9494;
 }
