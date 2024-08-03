@@ -1,0 +1,504 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5757;
+  height: 80px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+}
+header .logo {
+  height: 80px;
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    height: 40px;
+  }
+}
+header .logo img {
+  height: 100%;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+  height: 60%;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    gap: 0px;
+  }
+}
+header nav a {
+  color: white;
+  font-family: "Poppins";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.5s ease, background-color 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  header nav a {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+header nav a:hover {
+  border-color: #fa9494;
+}
+header nav a:active {
+  background-color: #e84a4a;
+}
+
+.banner {
+  background-image: url("../assets/img/background-img.jpg");
+  background-size: cover;
+  height: 35vw;
+  background-position: center;
+  font-family: "Lexend Exa";
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    height: 300px;
+  }
+}
+.banner__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 21, 63, 0.295);
+  z-index: 1;
+}
+.banner__content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 480px) {
+  .banner__content {
+    width: 75%;
+  }
+}
+.banner__content h1 {
+  text-align: center;
+  font-size: 2.5vw;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  transform: translateX(-100%);
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .banner__content h1 {
+    font-size: 28px;
+  }
+}
+.banner__content__first {
+  font-size: 1.5vw;
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0s;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+@media screen and (max-width: 480px) {
+  .banner__content__first {
+    font-size: 10px;
+  }
+}
+.banner__content__second {
+  font-size: 2.2vw;
+  animation: slideInFromLeft 2s ease-out forwards;
+  animation-delay: 2s;
+  opacity: 0;
+  transform: translateX(-100%);
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .banner__content__second {
+    font-size: 13px;
+  }
+}
+
+#presentation {
+  background-color: #ff5757;
+  width: 100%;
+}
+#presentation .titres {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#presentation .titres h2 {
+  color: #e84a4a;
+  font-size: 6vw;
+  font-family: "Lexend Exa";
+}
+@media screen and (max-width: 480px) {
+  #presentation .titres h2 {
+    font-size: 28px;
+  }
+}
+#presentation .titres h3 {
+  color: white;
+  font-family: "Poppins";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 400;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 480px) {
+  #presentation .titres h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+#presentation .paragraph {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  color: white;
+  font-size: 1.4vw;
+  font-family: "Lexend Exa";
+  text-align: center;
+  font-weight: 250;
+}
+@media screen and (max-width: 480px) {
+  #presentation .paragraph {
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#presentation .paragraph p {
+  width: 30%;
+  box-sizing: border-box;
+  flex: 1 1 calc(33% - 20px);
+}
+@media screen and (max-width: 480px) {
+  #presentation .paragraph p {
+    width: 80%;
+  }
+}
+
+#projets {
+  width: 100%;
+}
+#projets .titres {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#projets .titres h2 {
+  color: #57ffff;
+  font-size: 6vw;
+  font-family: "Lexend Exa";
+}
+@media screen and (max-width: 480px) {
+  #projets .titres h2 {
+    font-size: 28px;
+  }
+}
+#projets .titres h3 {
+  color: black;
+  font-family: "Poppins";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 400;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 480px) {
+  #projets .titres h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+#projets #projets__filters {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  #projets #projets__filters {
+    display: none;
+  }
+}
+#projets #projets__filters .filter-item {
+  color: black;
+  font-family: "Poppins";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.5s ease, background-color 0.3s ease;
+}
+#projets #projets__filters .filter-item:hover {
+  border-color: #fa9494;
+}
+#projets #projets__filters .active {
+  background-color: #e84a4a;
+  color: white;
+  border-color: #fa9494;
+}
+#projets #projets__container {
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  #projets #projets__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  #projets #projets__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#projets #projets__container .projet {
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#projets #projets__container .projet:hover {
+  transform: scale(1.1);
+}
+#projets #projets__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#projets #projets__container .projet-info {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+#projets #projets__container .projet-info h4 {
+  margin: 0;
+  width: 100%;
+  font-family: "Lexend Exa";
+  color: white;
+}
+
+#competences {
+  background-color: #ff5757;
+}
+#competences .titres {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#competences .titres h2 {
+  color: #e84a4a;
+  font-size: 6vw;
+  font-family: "Lexend Exa";
+}
+@media screen and (max-width: 480px) {
+  #competences .titres h2 {
+    font-size: 28px;
+  }
+}
+#competences .titres h3 {
+  color: white;
+  font-family: "Poppins";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 400;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 480px) {
+  #competences .titres h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+#competences .outils {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 0 60px;
+}
+@media screen and (max-width: 768px) {
+  #competences .outils {
+    grid-template-columns: repeat(3, 32%);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #competences .outils {
+    grid-template-columns: repeat(2, 40%);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+  }
+}
+#competences .outils__item {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #competences .outils__item {
+    padding: 20px;
+  }
+}
+#competences .outils__item img {
+  width: 70%;
+  height: 70%;
+}
+#competences .outils__item p {
+  color: white;
+  font-family: "Lexend Exa";
+  font-size: 2vw;
+}
+@media screen and (max-width: 480px) {
+  #competences .outils__item p {
+    font-size: 15px;
+  }
+}
+
+body {
+  margin: 0px auto;
+}
+
+* {
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* Animation de translation depuis la gauche */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer #contact {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  footer #contact {
+    flex-direction: row-reverse;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer #contact {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+footer #contact .logo-footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  footer #contact .logo-footer {
+    height: 150px;
+    justify-content: center;
+  }
+}
+footer #contact .logo-footer a {
+  height: 70%;
+  text-decoration: none;
+}
+footer #contact .logo-footer img {
+  height: 100%;
+}
+footer #contact .contact__container {
+  font-family: "Lexend Exa";
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer #contact .contact__container {
+    font-size: 10px;
+  }
+}
+footer #contact .contact__container h4 {
+  margin-bottom: 15px;
+}
+footer #contact .contact__container .contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer #contact .contact__container .contact__info__item {
+  display: flex;
+  align-items: center;
+  margin-right: 0 10px 0 0;
+  padding: 0;
+  gap: 10px;
+}
+footer #contact .contact__container .contact__info__item p {
+  margin: 0;
+}
+footer #contact .contact__container .contact__info a:hover {
+  color: #ff5757;
+}
+footer .rights {
+  font-family: "Lexend Exa";
+  text-align: center;
+  background-color: #ff5757;
+}
+@media screen and (max-width: 768px) {
+  footer .rights {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

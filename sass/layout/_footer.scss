@@ -1,0 +1,70 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    #contact{
+        display: flex;
+        justify-content: space-between;
+        height: 150px;
+        @media screen and (max-width: 768px) {
+            flex-direction: row-reverse;
+            height: auto;
+        }
+        @media screen and (max-width: 480px) {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+        .logo-footer{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                height: 150px;
+                justify-content: center;
+            }
+            a{
+                height: 70%;
+                text-decoration: none;
+            }
+            img{
+                height: 100%;
+            }
+        }
+        .contact__container{
+            font-family: "Lexend Exa";
+            margin-left: 10px;
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+            }
+            h4{
+                margin-bottom: 15px;
+            }
+            .contact__info{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                &__item{
+                    display: flex;                   
+                    align-items: center;
+                    margin-right: 0 10px 0 0;
+                    padding: 0;
+                    gap: 10px;
+                    p{
+                        margin: 0;
+                    }
+                }
+                a:hover{
+                    color: $primary-color;
+                }
+            }         
+        }
+    }
+    .rights{
+        font-family: "Lexend Exa";
+        text-align: center;
+        background-color: $primary-color;
+        @media screen and (max-width: 768px) {
+            font-size: 8px;
+        }
+    }
+}
