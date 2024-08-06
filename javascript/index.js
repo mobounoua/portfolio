@@ -36,10 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     projectInfo.classList.add("projet-info")
                     const projectName = document.createElement("h4");
                     projectName.textContent = project.name;
+                    const projectDescrip = document.createElement("p")
+                    projectDescrip.textContent = project.description;
     
                     projectElement.appendChild(projectImage);
-                    projectElement.appendChild(projectInfo)
+                    projectElement.appendChild(projectInfo);
                     projectInfo.appendChild(projectName);
+                    projectInfo.appendChild(projectDescrip);
     
                     projectsContainer.appendChild(projectElement);
                 });

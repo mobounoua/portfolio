@@ -3,54 +3,64 @@
         "image": "assets/img/projets/ridingcity.png",
         "name": "Riding Cities",
         "category": "HTML/CSS",
-        "link": "https://github.com/mobounoua/ridingcities"
+        "link": "https://github.com/mobounoua/ridingcities",
+        "description" : "Moderniser le site web d'une association de Skate"
     },
     {
         "image": "assets/img/projets/booki.png",
         "name": "Booki",
         "category": "HTML/CSS",
-        "link": "https://github.com/mobounoua/booki"
+        "link": "https://github.com/mobounoua/booki",
+        "description" : "Integrer l'interface d'un site d'hébergement et activités."
     },
     {
         "image": "assets/img/projets/ohmyfood.png",
         "name": "Ohmyfood",
         "category": "HTML/CSS",
-        "link": "https://mobounoua.github.io/ohmyfood/"
+        "link": "https://mobounoua.github.io/ohmyfood/",
+        "description" : "Réservations en ligne de menu gastronomique."
+        
     },
     {
         "image": "assets/img/projets/print-it.png",
         "name": "Print-it",
         "category": "JavaScript",
-        "link": "https://mobounoua.github.io/Print-it/"
+        "link": "https://mobounoua.github.io/Print-it/",
+        "description" : "Réaliser un carrousel pour le site d'une imprimerie familiale."
     },
     {
         "image": "assets/img/projets/sophie-bluel.png",
         "name": "Sophie Bluel",
         "category": "JavaScript",
-        "link": "https://github.com/mobounoua/SophieBluel"
+        "link": "https://github.com/mobounoua/SophieBluel",
+        "description" : "développer le site de Sophie Bluel, une architecte d'interieur."
     },
     {
         "image": "assets/img/projets/kasa.png",
         "name": "Kasa",
         "category": "React",
-        "link": "https://mobounoua.github.io/kasa/"
+        "link": "https://mobounoua.github.io/kasa/",
+        "description" : "Refonte complète d'un site spécialisé dans la location de logements entre particuliers."
     },
     {
         "image": "assets/img/projets/nina.png",
         "name": "Nina Carducci",
         "category": "Autre",
-        "link": "https://mobounoua.github.io/nina/"
+        "link": "https://mobounoua.github.io/nina/",
+        "description" : "Optimiser le site portfolio d'une photographe professionnelle."
     },
     {
         "image": "assets/img/projets/724event.png",
         "name": "724Event",
         "category": "Autre",
-        "link": "https://github.com/mobounoua/724events"
+        "link": "https://github.com/mobounoua/724events",
+        "description" : "Debugger un site vitrine d'une agence évènementielle."
     },
     {
         "image": "assets/img/projets/argentbank.png",
         "name": "Argent Bank",
         "category": "React",
-        "link": "https://github.com/mobounoua/argent-bank"
+        "link": "https://github.com/mobounoua/argent-bank",
+        "description" : "Développement d'une application pour une banque en ligne."
     }
 ]
