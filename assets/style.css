@@ -281,7 +281,7 @@ header nav a:active {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   #projets #projets__container {
     display: flex;
     flex-direction: column;
@@ -316,6 +316,16 @@ header nav a:active {
   padding-left: 10px;
   color: white;
   font-family: "Lexend Exa";
+}
+@media screen and (max-width: 768px) {
+  #projets #projets__container .projet-info {
+    height: 35%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #projets #projets__container .projet-info {
+    height: 30%;
+  }
 }
 #projets #projets__container .projet-info h4 {
   margin: 0;
